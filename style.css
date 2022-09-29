@@ -1,0 +1,74 @@
+html { font-size: 52.5%; }
+
+body{
+    margin-top: 6rem;
+    background-color: rgb(210, 163, 230);
+    font-family: 'Poppins', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    z-index: 0;
+}
+
+.heading{
+    font-size: 6rem;
+    font-weight: 800;
+    text-align: center;
+    
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-weight: 500;
+    font-size: 12rem;
+    padding: 0;
+    
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 14rem);
+    grid-template-rows: repeat(3, 14rem);
+    align-self: center;
+    
+    
+
+} 
+.buttons div{
+    border: 2px solid black;
+
+}
+.game{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    margin-top: 4rem;
+}
+#turn{
+    font-size: 2rem;
+    text-align: center;
+   
+}
+#win{
+    font-size: 4rem;
+   height: 8rem;
+    font-weight: 700;
+    z-index: 1;
+    text-align: center;
+    transition: all 2sec;
+    left:50%;
+    transform: translate(-50% 0);
+}
+.btn{
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 45px;
+   
+    cursor: pointer;
+}
+.game-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
