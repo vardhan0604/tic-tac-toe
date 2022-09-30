@@ -49,7 +49,7 @@ function checkwin(){
         if(buttons[e[0]].innerText===buttons[e[1]].innerText && buttons[e[0]].innerText==buttons[e[2]].innerText && buttons[e[2]].innerText !=""){
             result.innerText=buttons[e[0]].innerText+" WINS!!"
             result.style.color="green"
-      
+      console.log("win c")
             gameover=true
             buttons.forEach(function(e){
             
@@ -58,14 +58,15 @@ function checkwin(){
             })
 
         }
-       
-    })
-    let count=0;
-    buttons.forEach(function(e){
+
+        if(gameover===false){
+            console.log("tie")
+            let count=0;
+            buttons.forEach(function(a){
    
-                if(e.getAttribute("data-key")==="true"){
-                    count++;
-                    
+                if(a.getAttribute("data-key")==="true"){
+                    count=count+1
+                    console.log(count)
                 }
              
             })
@@ -73,6 +74,12 @@ function checkwin(){
                 result.style.color="yellow"
                 result.innerText="TIE!!!"
             }
+        }
+       
+    }
+    
+    )
+    
       
 }
 buttons.forEach(function(e){
