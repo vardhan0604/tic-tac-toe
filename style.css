@@ -1,7 +1,7 @@
-html { font-size: 52.5%; }
+html { font-size: 57.5%; }
 
 body{
-    margin-top: 6rem;
+    margin-top: 2rem;
     background-color: rgb(210, 163, 230);
     font-family: 'Poppins', sans-serif;
     overflow-y: hidden;
@@ -10,7 +10,7 @@ body{
 }
 
 .heading{
-    font-size: 6rem;
+    font-size: 7rem;
     font-weight: 800;
     text-align: center;
     
@@ -35,7 +35,7 @@ body{
 
 } 
 .buttons div{
-    border: 2px solid black;
+    border: 3px solid black;
 
 }
 .game{
@@ -44,9 +44,10 @@ body{
     justify-content: center;
     user-select: none;
     margin-top: 4rem;
+    padding: 0 4rem;
 }
 #turn{
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
    
 }
@@ -63,9 +64,16 @@ body{
 .btn{
     padding: 1rem 2rem;
     border: none;
-    border-radius: 45px;
-   
+    border-radius: 13px;
+    font-weight: 700;
+    background-color:  rgb(59, 57, 90);
+    color: #fff;
+   transition: all 0.2s;
     cursor: pointer;
+}
+.btn:hover{
+    background-color: #fff;
+    color:  rgb(59, 57, 90);
 }
 .game-menu{
     display: flex;
