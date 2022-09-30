@@ -62,15 +62,14 @@ function checkwin(){
     })
     let count=0;
     buttons.forEach(function(e){
-        console.log("check tie ")
-        console.log(e.getAttribute("data-key"))
+   
                 if(e.getAttribute("data-key")==="true"){
                     count++;
-                    console.log(e.getAttribute("data-key"))
+                    
                 }
              
             })
-            if(count=9){
+            if(count===9){
                 result.style.color="yellow"
                 result.innerText="TIE!!!"
             }
